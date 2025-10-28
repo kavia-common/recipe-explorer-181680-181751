@@ -1,0 +1,302 @@
+:root {
+  /* Colors mapped from design_system.colors */
+  --color-ffffff: #ffffff;
+  --color-000000: #000000;
+  --color-121212: #121212;
+  --color-d9d9d9: #d9d9d9;
+  --color-129575: #129575;
+  --color-ff9c00: #ff9c00;
+  --color-ffc107: #ffc107;
+  --color-ff3d00: #ff3d00;
+  --color-4caf50: #4caf50;
+  --color-1976d2: #1976d2;
+  --color-035b81: #035b81;
+  --color-303030: #303030;
+  --color-484848: #484848;
+  --color-979797: #979797;
+  --color-dadada: #dadada;
+}
+
+/* Typography variables for used references */
+:root {
+  /* typo_58 */
+  --typo-58-family: 'Poppins', sans-serif;
+  --typo-58-size: 16px;
+  --typo-58-weight: 600;
+  --typo-58-line-height: 24px;
+  --typo-58-letter-spacing: 0;
+  --typo-58-align: center;
+  --typo-58-color: var(--color-ffffff);
+
+  /* typo_60 */
+  --typo-60-family: 'Poppins', sans-serif;
+  --typo-60-size: 30px;
+  --typo-60-weight: 600;
+  --typo-60-line-height: 45px;
+  --typo-60-letter-spacing: 0;
+  --typo-60-align: left;
+  --typo-60-color: var(--color-000000);
+
+  /* typo_61 */
+  --typo-61-family: 'Poppins', sans-serif;
+  --typo-61-size: 20px;
+  --typo-61-weight: 400;
+  --typo-61-line-height: 30px;
+  --typo-61-letter-spacing: 0;
+  --typo-61-align: left;
+  --typo-61-color: var(--color-121212);
+
+  /* typo_62 */
+  --typo-62-family: 'Poppins', sans-serif;
+  --typo-62-size: 11px;
+  --typo-62-weight: 400;
+  --typo-62-line-height: 16.5px;
+  --typo-62-letter-spacing: 0;
+  --typo-62-align: center;
+  --typo-62-color: var(--color-ff9c00);
+
+  /* typo_63 */
+  --typo-63-family: 'Poppins', sans-serif;
+  --typo-63-size: 11px;
+  --typo-63-weight: 500;
+  --typo-63-line-height: 16.5px;
+  --typo-63-letter-spacing: 0;
+  --typo-63-align: left;
+  --typo-63-color: var(--color-000000);
+
+  /* typo_64 */
+  --typo-64-family: 'Poppins', sans-serif;
+  --typo-64-size: 11px;
+  --typo-64-weight: 500;
+  --typo-64-line-height: 16.5px;
+  --typo-64-letter-spacing: 0;
+  --typo-64-align: left;
+  --typo-64-color: var(--color-d9d9d9);
+
+  /* typo_65 */
+  --typo-65-family: 'Poppins', sans-serif;
+  --typo-65-size: 11px;
+  --typo-65-weight: 400;
+  --typo-65-line-height: 16.5px;
+  --typo-65-letter-spacing: 0;
+  --typo-65-align: left;
+  --typo-65-color: var(--color-d9d9d9);
+
+  /* typo_66 */
+  --typo-66-family: 'Poppins', sans-serif;
+  --typo-66-size: 14px;
+  --typo-66-weight: 400;
+  --typo-66-line-height: 21px;
+  --typo-66-letter-spacing: 0;
+  --typo-66-align: left;
+  --typo-66-color: var(--color-121212);
+
+  /* typo_67 */
+  --typo-67-family: 'SF Pro Display', system-ui, sans-serif;
+  --typo-67-size: 15px;
+  --typo-67-weight: 500;
+  --typo-67-line-height: 17.900390625px;
+  --typo-67-letter-spacing: -0.165px;
+  --typo-67-align: left;
+  --typo-67-color: var(--color-303030);
+}
+
+/* Reset and base */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-ffffff);
+}
+.screen {
+  width: 375px;
+  height: 812px;
+  position: relative;
+  overflow: hidden;
+  background: var(--color-ffffff);
+}
+.container.root {
+  position: relative;
+}
+.container.group,
+.component,
+.button,
+.rectangle,
+.line,
+.boolean,
+.icon,
+.img,
+.text {
+  position: absolute;
+}
+
+/* Style references from design system */
+
+/* style_10: background white, border-radius:30 */
+.style_10 {
+  background-color: var(--color-ffffff);
+  border-radius: 30px;
+}
+
+/* style_3: background black (used as text color through typography) */
+.style_3 { background-color: var(--color-000000); }
+
+/* style_18: background #121212 (used as label text color via typography) */
+.style_18 { background-color: var(--color-121212); }
+
+/* style_19: background #ff9c00 for forgot password text */
+.style_19 { background-color: var(--color-ff9c00); }
+
+/* style_28: line grey */
+.style_28 {
+  background-color: var(--color-d9d9d9);
+  border-bottom: 1px solid var(--color-d9d9d9);
+}
+
+/* style_29: grey text placeholder background (we only need color for text) */
+.style_29 { background-color: var(--color-d9d9d9); }
+
+/* style_30: input border */
+.style_30 {
+  border: 1.5px solid var(--color-d9d9d9);
+  border-radius: 10px;
+  background: transparent;
+}
+
+/* style_11: big button background primary green, radius 10 */
+.style_11 {
+  background-color: var(--color-129575);
+  border-radius: 10px;
+}
+
+/* style_12: transparent */
+.style_12 { background-color: var(--color-ffffff); opacity: 0; }
+
+/* style_21..24 colors for google icon parts */
+.style_21 { background-color: var(--color-ffc107); }
+.style_22 { background-color: var(--color-ff3d00); }
+.style_23 { background-color: var(--color-4caf50); }
+.style_24 { background-color: var(--color-1976d2); }
+
+/* style_25: opacity for facebook bg shape */
+.style_25 { opacity: 0.58; }
+
+/* style_26: facebook brand color fill */
+.style_26 { background-color: var(--color-035b81); }
+
+/* style_27: invisible */
+.style_27 { opacity: 0; }
+
+/* style_32: home indicator pill */
+.style_32 {
+  background-color: var(--color-121212);
+  border-radius: 100px;
+}
+
+/* style_33, style_34, style_35 for status icons */
+.style_33 { background-color: var(--color-303030); opacity: 0.4; }
+.style_34 {
+  background-color: var(--color-303030);
+  border: 0 solid var(--color-4cd964);
+  border-radius: 1.6px;
+}
+.style_35 { background-color: var(--color-303030); }
+
+/* style_126: social button card with shadow and radius 10 */
+.style_126 {
+  background-color: var(--color-ffffff);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px #696969, 0px 0px 0px 3px rgba(0,0,0,0); /* approximate shadow_0 */
+}
+
+/* Text helpers per typography */
+.text.typo_60 {
+  font-family: var(--typo-60-family);
+  font-size: var(--typo-60-size);
+  font-weight: var(--typo-60-weight);
+  line-height: var(--typo-60-line-height);
+  letter-spacing: var(--typo-60-letter-spacing);
+  color: var(--typo-60-color);
+  text-align: var(--typo-60-align);
+}
+.text.typo_61 {
+  font-family: var(--typo-61-family);
+  font-size: var(--typo-61-size);
+  font-weight: var(--typo-61-weight);
+  line-height: var(--typo-61-line-height);
+  letter-spacing: var(--typo-61-letter-spacing);
+  color: var(--typo-61-color);
+  text-align: var(--typo-61-align);
+}
+.text.typo_62 {
+  font-family: var(--typo-62-family);
+  font-size: var(--typo-62-size);
+  font-weight: var(--typo-62-weight);
+  line-height: var(--typo-62-line-height);
+  letter-spacing: var(--typo-62-letter-spacing);
+  color: var(--typo-62-color);
+  text-align: var(--typo-62-align);
+}
+.text.typo_63 {
+  font-family: var(--typo-63-family);
+  font-size: var(--typo-63-size);
+  font-weight: var(--typo-63-weight);
+  line-height: var(--typo-63-line-height);
+  letter-spacing: var(--typo-63-letter-spacing);
+  color: var(--typo-63-color);
+  text-align: var(--typo-63-align);
+}
+.text.typo_64 {
+  font-family: var(--typo-64-family);
+  font-size: var(--typo-64-size);
+  font-weight: var(--typo-64-weight);
+  line-height: var(--typo-64-line-height);
+  letter-spacing: var(--typo-64-letter-spacing);
+  color: var(--typo-64-color);
+  text-align: var(--typo-64-align);
+}
+.text.typo_65 {
+  font-family: var(--typo-65-family);
+  font-size: var(--typo-65-size);
+  font-weight: var(--typo-65-weight);
+  line-height: var(--typo-65-line-height);
+  letter-spacing: var(--typo-65-letter-spacing);
+  color: var(--typo-65-color);
+  text-align: var(--typo-65-align);
+}
+.text.typo_66 {
+  font-family: var(--typo-66-family);
+  font-size: var(--typo-66-size);
+  font-weight: var(--typo-66-weight);
+  line-height: var(--typo-66-line-height);
+  letter-spacing: var(--typo-66-letter-spacing);
+  color: var(--typo-66-color);
+  text-align: var(--typo-66-align);
+}
+.text.typo_58 {
+  font-family: var(--typo-58-family);
+  font-size: var(--typo-58-size);
+  font-weight: var(--typo-58-weight);
+  line-height: var(--typo-58-line-height);
+  letter-spacing: var(--typo-58-letter-spacing);
+  color: var(--typo-58-color);
+  text-align: var(--typo-58-align);
+}
+.text.typo_67 {
+  font-family: var(--typo-67-family);
+  font-size: var(--typo-67-size);
+  font-weight: var(--typo-67-weight);
+  line-height: var(--typo-67-line-height);
+  letter-spacing: var(--typo-67-letter-spacing);
+  color: var(--typo-67-color);
+  text-align: var(--typo-67-align);
+}
+
+/* Element defaults */
+.button.big {
+  position: absolute;
+  display: block;
+}
+.img { position: absolute; object-fit: cover; }
+.icon { position: absolute; image-rendering: -webkit-optimize-contrast; }
+.line { position: absolute; height: 1px; }
